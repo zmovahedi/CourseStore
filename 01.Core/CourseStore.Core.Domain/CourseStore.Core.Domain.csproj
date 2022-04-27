@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\04.Common\CourseStore.Common\CourseStore.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Comments\Repositories\" />
+    <Folder Include="Courses\Specifications\" />
+    <Folder Include="Orders\Repositories\" />
+    <Folder Include="Tags\ValueObjects\" />
+    <Folder Include="Tags\Repositories\" />
+    <Folder Include="Teachers\Repositories\" />
+  </ItemGroup>
+
+</Project>
