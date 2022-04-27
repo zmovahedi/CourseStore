@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CourseStore.Core.Domain.Courses.Entities;
+using MediatR;
 
 namespace CourseStore.Core.Domain.Courses.Commands
 {
-    public class UpdatePrice
+    public class UpdatePrice : IRequest<Course>
     {
+        public int Id { get; set; }
+        public int Price { get; set; }
     }
 }

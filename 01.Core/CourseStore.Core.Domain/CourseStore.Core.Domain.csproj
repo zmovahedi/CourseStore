@@ -19,4 +19,8 @@
     <Folder Include="Teachers\Repositories\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MediatR.Contracts" Version="1.0.1" />
+  </ItemGroup>
+
 </Project>

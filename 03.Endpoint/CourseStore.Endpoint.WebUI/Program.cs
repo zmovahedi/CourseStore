@@ -5,6 +5,7 @@ using CourseStore.Core.Domain.Courses.Repositories;
 using CourseStore.Infra.Data.Commands.EF;
 using CourseStore.Infra.Data.Commands.EF.Contexts;
 using CourseStore.Infra.Data.Commands.EF.Courses.Repositories;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,7 @@ builder.Services.AddScoped<IUnitOfWork, CourseUnitOfWork>();
 builder.Services.AddScoped<CreateCourseHandler>();
 builder.Services.AddScoped<SetDescriptionHandler>();
 builder.Services.AddScoped<GetCourseListHandler>();
+builder.Services.AddMediatR(typeof(UpdatePriceHandler).Assembly);
 
 var app = builder.Build();
 

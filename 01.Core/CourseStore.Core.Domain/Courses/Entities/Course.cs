@@ -42,5 +42,6 @@ namespace CourseStore.Core.Domain.Courses.Entities
         { 
             Price = price;
         }
+
     }
 }
